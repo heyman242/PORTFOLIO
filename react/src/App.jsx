@@ -1,4 +1,4 @@
-import { NavBar } from "./components"
+import { NavBar, Home } from "./components"
 
 function App() {
   
@@ -6,6 +6,7 @@ function App() {
   return (
     <div>
     <NavBar/>
+    <Home/>
     
     </div>
       
