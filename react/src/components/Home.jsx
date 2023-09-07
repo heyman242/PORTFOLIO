@@ -1,5 +1,6 @@
 import HeroImage from "../assets/heroImage.jpeg";
 import { RiArrowRightSLine } from "react-icons/ri";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -13,16 +14,24 @@ const Home = () => {
             I'm a Full Stack Developer
           </h2>
           <p className="text-gray-500 py-4 mx-w-md">
-            I love to work on the web application using technologies like:
-            Node.js React.js Express.js Mongo DB Tailwind CSS Django
+            I have a deep passion for developing web applications, and I thrive
+            when working with technologies such as Node.js, React.js,
+            Express.js, MongoDB, Tailwind CSS, and Django. These tools allow me
+            to craft dynamic and innovative solutions that cater to today's
+            ever-evolving digital landscape.
           </p>
           <div>
-            <button className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
+            <Link
+              to="portfolio"
+              smooth
+              duration={500}
+              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+            >
               Portfolio
               <span className="group-hover:rotate-90 duration-300">
                 <RiArrowRightSLine size={25} className="ml-1" />
               </span>
-            </button>
+            </Link>
           </div>
         </div>
         <div>
@@ -30,7 +39,7 @@ const Home = () => {
             src={HeroImage}
             alt="profile"
             className="rounded-2xl mx-auto"
-            style={{ width: "70%", height: "auto" }}
+            style={{ width: "90%", height: "auto" }}
           />
         </div>
       </div>
