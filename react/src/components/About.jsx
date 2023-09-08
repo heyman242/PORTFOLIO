@@ -2,11 +2,11 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      className="bg-gradient-to-b from-gray-800 to-black text-white"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+      <div className="container mx-auto py-12 px-4">
+        <div>
+          <p className="text-3xl font-bold inline border-b-4 border-gray-500">
             About
           </p>
         </div>
@@ -15,7 +15,7 @@ const About = () => {
           I'm Himanshu Bobade, originally from Chandrapur, Maharashtra. I have a
           educational background in Mechanical Engineering, having completed my
           Bachelor's degree at the prestigious National Institute of Technology
-          (NIT), Raipur. 
+          (NIT), Raipur.
         </p>
         <br />
         <p className="text-xl">

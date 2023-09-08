@@ -49,30 +49,30 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
+      className="bg-gradient-to-b from-black to-gray-800 text-white"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
+      <div className="container mx-auto py-12 px-4">
+        <div>
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Portfolio
           </p>
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 sm:px-0">
           {portfolios.map(({ id, src, demoLink, codeLink }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
                 alt=""
-                className="rounded-md duration-200 hover:scale-105"
+                className="rounded-md duration-200 hover:scale-105 w-full h-auto"
               />
               <div className="flex items-center justify-center">
                 <a
                   href={demoLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  className="w-1/2 px-4 py-2 m-2 rounded-md duration-200 hover:scale-105 bg-blue-500 text-white text-center block"
                 >
                   Demo
                 </a>
@@ -80,7 +80,7 @@ const Portfolio = () => {
                   href={codeLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  className="w-1/2 px-4 py-2 m-2 rounded-md duration-200 hover:scale-105 bg-gray-500 text-white text-center block"
                 >
                   Code
                 </a>
